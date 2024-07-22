@@ -1,0 +1,15 @@
+name: 'PR Reviewer'
+description: 'Reviews pull requests using OpenAI GPT'
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+  OPENAI_API_KEY:
+    description: 'OpenAI API key'
+    required: true
+  ASSISTANT_ID:
+    description: 'OpenAI API key'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
